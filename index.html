@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/200b067ff9.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>My Keep</title>
+
+    <style>
+        * {
+            font-family: 'Mulish', sans-serif;
+        }
+
+        .block {
+            position: relative;
+        }
+
+        .icons {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+        }
+
+        .disabled {
+            pointer-events: none;
+        }
+
+        .enabled {
+            pointer-events: visible;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <h1 class="text-center py-3 bg-warning fw-normal" style="color: #262626;"><i class="far fa-sticky-note me-3"
+            aria-hidden="true"></i>My
+        Keep</h1>
+
+    <div class="container add-note d-flex justify-content-end my-5">
+
+        <button class="button bg-warning btn rounded-circle" style="padding: 24px 26px;" title="Add A Note"><i
+                class="fas fa-plus fs-4  text-light"></i></button>
+
+    </div>
+
+    <div class="container">
+
+        <div id="body" class="row row-cols-lg-3 gx-lg-5 gy-5">
+
+        </div>
+
+    </div>
+
+    <footer class="fixed-bottom bg-warning py-2">
+
+        <h3 class=" text-center fs-4 mb-0">Created By &nbsp;<a href="https://github.com/YeasarArefin"
+                target="_blank">@Yeasar Arefin</a></h3>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+
+<script src="app.js"></script>
+
+</html>
